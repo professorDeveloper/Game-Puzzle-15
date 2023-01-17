@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidStudioProjects/GamePuzzle15/app/src/main/res/drawable-v24/back_style_menus.xml" value="0.213" />
+        <entry key="..\:/AndroidStudioProjects/GamePuzzle15/app/src/main/res/drawable-v24/ic_button.xml" value="0.213" />
+        <entry key="..\:/AndroidStudioProjects/GamePuzzle15/app/src/main/res/drawable-v24/ic_check.xml" value="0.1595" />
+        <entry key="..\:/AndroidStudioProjects/GamePuzzle15/app/src/main/res/drawable-v24/ic_check_off.xml" value="0.213" />
+        <entry key="..\:/AndroidStudioProjects/GamePuzzle15/app/src/main/res/drawable-v24/ic_main_menu.xml" value="0.222" />
+        <entry key="..\:/AndroidStudioProjects/GamePuzzle15/app/src/main/res/drawable-v24/ic_racing_finish_svgrepo_com.xml" value="0.213" />
+        <entry key="..\:/AndroidStudioProjects/GamePuzzle15/app/src/main/res/drawable-v24/ic_resume.xml" value="0.213" />
+        <entry key="..\:/AndroidStudioProjects/GamePuzzle15/app/src/main/res/drawable-v24/ic_statistics.xml" value="0.213" />
+        <entry key="..\:/AndroidStudioProjects/GamePuzzle15/app/src/main/res/drawable-v24/selector_clear_record.xml" value="0.1595" />
+        <entry key="..\:/AndroidStudioProjects/GamePuzzle15/app/src/main/res/drawable-v24/selector_settings_back.xml" value="0.213" />
+        <entry key="..\:/AndroidStudioProjects/GamePuzzle15/app/src/main/res/drawable-v24/selector_switch_music.xml" value="0.1595" />
+        <entry key="..\:/AndroidStudioProjects/GamePuzzle15/app/src/main/res/drawable-v24/selector_switch_track.xml" value="0.1595" />
+        <entry key="..\:/AndroidStudioProjects/GamePuzzle15/app/src/main/res/drawable-v24/shape_button.xml" value="0.213" />
+        <entry key="..\:/AndroidStudioProjects/GamePuzzle15/app/src/main/res/drawable-v24/shape_button_disable.xml" value="0.213" />
+        <entry key="..\:/AndroidStudioProjects/GamePuzzle15/app/src/main/res/drawable-v24/shape_button_win.xml" value="0.1595" />
+        <entry key="..\:/AndroidStudioProjects/GamePuzzle15/app/src/main/res/drawable-v24/shape_button_win2.xml" value="0.213" />
+        <entry key="..\:/AndroidStudioProjects/GamePuzzle15/app/src/main/res/drawable-v24/shape_dialog_winner.xml" value="0.1595" />
+        <entry key="..\:/AndroidStudioProjects/GamePuzzle15/app/src/main/res/drawable-v24/shape_empty_button.xml" value="0.213" />
+        <entry key="..\:/AndroidStudioProjects/GamePuzzle15/app/src/main/res/drawable-v24/shape_game_board_disable.xml" value="0.1595" />
+        <entry key="..\:/AndroidStudioProjects/GamePuzzle15/app/src/main/res/drawable-v24/shape_game_board_parent.xml" value="0.213" />
+        <entry key="..\:/AndroidStudioProjects/GamePuzzle15/app/src/main/res/drawable-v24/shape_moves_timer.xml" value="0.213" />
+        <entry key="..\:/AndroidStudioProjects/GamePuzzle15/app/src/main/res/drawable-v24/switch_thumb_false.xml" value="0.213" />
+        <entry key="..\:/AndroidStudioProjects/GamePuzzle15/app/src/main/res/drawable-v24/switch_thumb_true.xml" value="0.213" />
+        <entry key="..\:/AndroidStudioProjects/GamePuzzle15/app/src/main/res/drawable-v24/thumb.xml" value="0.213" />
+        <entry key="..\:/AndroidStudioProjects/GamePuzzle15/app/src/main/res/drawable-v24/track.xml" value="0.213" />
+        <entry key="..\:/AndroidStudioProjects/GamePuzzle15/app/src/main/res/drawable/click_sound.xml" value="0.222" />
+        <entry key="..\:/AndroidStudioProjects/GamePuzzle15/app/src/main/res/drawable/level_bg.xml" value="0.213" />
+        <entry key="..\:/AndroidStudioProjects/GamePuzzle15/app/src/main/res/drawable/restart_bg.xml" value="0.213" />
+        <entry key="..\:/AndroidStudioProjects/GamePuzzle15/app/src/main/res/drawable/setting_item_bg.xml" value="0.213" />
+        <entry key="..\:/AndroidStudioProjects/GamePuzzle15/app/src/main/res/drawable/shape_button3.xml" value="0.222" />
+        <entry key="..\:/AndroidStudioProjects/GamePuzzle15/app/src/main/res/drawable/shape_buttonbg2.xml" value="0.222" />
+        <entry key="..\:/AndroidStudioProjects/GamePuzzle15/app/src/main/res/layout/activity_game.xml" value="0.2988679352838745" />
+        <entry key="..\:/AndroidStudioProjects/GamePuzzle15/app/src/main/res/layout/activity_game_expert.xml" value="0.4528302049755674" />
+        <entry key="..\:/AndroidStudioProjects/GamePuzzle15/app/src/main/res/layout/activity_game_medium.xml" value="0.4528302049755674" />
+        <entry key="..\:/AndroidStudioProjects/GamePuzzle15/app/src/main/res/layout/activity_level.xml" value="0.3098958333333333" />
+        <entry key="..\:/AndroidStudioProjects/GamePuzzle15/app/src/main/res/layout/activity_main.xml" value="0.3098958333333333" />
+        <entry key="..\:/AndroidStudioProjects/GamePuzzle15/app/src/main/res/layout/activity_setting.xml" value="0.30885416666666665" />
+        <entry key="..\:/AndroidStudioProjects/GamePuzzle15/app/src/main/res/layout/bottom_sheet_layout.xml" value="0.29583333333333334" />
+        <entry key="..\:/AndroidStudioProjects/GamePuzzle15/app/src/main/res/layout/dialog_about.xml" value="0.3098958333333333" />
+        <entry key="..\:/AndroidStudioProjects/GamePuzzle15/app/src/main/res/layout/dialog_about_all.xml" value="0.2264151024877837" />
+        <entry key="..\:/AndroidStudioProjects/GamePuzzle15/app/src/main/res/layout/dialog_exit_app.xml" value="0.19924529018924966" />
+        <entry key="..\:/AndroidStudioProjects/GamePuzzle15/app/src/main/res/layout/dialog_records.xml" value="0.2988679352838745" />
+        <entry key="..\:/AndroidStudioProjects/GamePuzzle15/app/src/main/res/layout/dialog_records_place_holder.xml" value="0.3098958333333333" />
+        <entry key="..\:/AndroidStudioProjects/GamePuzzle15/app/src/main/res/layout/dialog_winner.xml" value="0.2988679352838745" />
+        <entry key="..\:/AndroidStudioProjects/GamePuzzle15/app/src/main/res/layout/item_background.xml" value="0.3098958333333333" />
+        <entry key="..\:/AndroidStudioProjects/GamePuzzle15/app/src/main/res/layout/page_one.xml" value="0.3098958333333333" />
+        <entry key="..\:/AndroidStudioProjects/GamePuzzle15/app/src/main/res/layout/page_third.xml" value="0.2988679352838745" />
+        <entry key="..\:/AndroidStudioProjects/GamePuzzle15/app/src/main/res/layout/page_two.xml" value="0.2264151024877837" />
+        <entry key="..\:/AndroidStudioProjects/GamePuzzle15/app/src/main/res/layout/settings_dialog.xml" value="0.3098958333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

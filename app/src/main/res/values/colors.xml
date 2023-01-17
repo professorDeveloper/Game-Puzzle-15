@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="color_game_board_disable">#BF181125</color>
+    <color name="color_game_board">#021727</color>
+    <color name="color_cell">#BF6200EA</color>
+    <color name="color_cell_disable">#BF31234D</color>
+    <color name="color_cell_win">#BF7AFF25</color>
+    <color name="color_cell_empty">#BF1F1630</color>
+    <color name="color_init_game">#1C0F33</color>
+    <color name="color_status_bar">#220674</color>
+
+    <color name="color_container">#BF1F1630</color>
+
+    <color name="color_main_screen_button_onClick">#BF1F1630</color>
+    <color name="color_main_screen_button_default">#BF1F1630</color>
+
+    <color name="color_restart_pause_on_click">#D3386A</color>
+    <color name="color_restart_pause_default">#BF1F1630</color>
+
+    <color name="color_snack_bar">#FFF</color>
+
+    <color name="color_switch_on">#00FF6A</color>
+    <color name="color_switch_off">#FF0000</color>
+
+    <color name="color_dialog_background">#26000000</color>
+
+</resources>

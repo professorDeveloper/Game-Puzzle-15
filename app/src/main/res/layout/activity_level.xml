@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="@dimen/_280sdp"    android:background="@drawable/level_bg"
+
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_margin="@dimen/_10sdp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/cancel_dialog"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:background="?selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_check_off"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:fontFamily="@font/celia_garcia"
+        android:text="Select Level"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/level_easy"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="80dp"
+        android:layout_marginTop="50dp"
+        android:text="Easy"
+        app:layout_constraintBottom_toTopOf="@+id/level_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/level_medium"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="80dp"
+        android:text="Medium"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/level_easy"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="@+id/level_easy"
+        app:layout_constraintTop_toBottomOf="@+id/level_easy" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/level_expert"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:text="Expert"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/level_medium"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="@+id/level_medium"
+        app:layout_constraintTop_toBottomOf="@+id/level_medium" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

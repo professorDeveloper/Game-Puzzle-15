@@ -1,0 +1,350 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img">
+
+    <LinearLayout
+
+        android:id="@+id/menu"
+        style="@style/style_restart_pause_button"
+        android:layout_width="120dp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="20dp"
+
+        android:background="@drawable/click_sound"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/button_restart"
+        app:layout_constraintStart_toStartOf="@+id/button_restart"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+
+            android:id="@+id/image"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_margin="@dimen/_4sdp"
+
+            android:src="@drawable/ic_music_on"
+            app:tint="@color/white" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/info"
+        style="@style/style_restart_pause_button"
+        android:layout_width="120dp"
+
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/click_sound"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/button_restart"
+        app:layout_constraintEnd_toEndOf="@+id/container_timer_moves"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+
+            android:id="@+id/image_share"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_margin="@dimen/_4sdp"
+
+            android:src="@drawable/ic_baseline_share_24"
+            app:tint="@color/white" />
+
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_restart"
+        style="@style/style_restart_pause_button"
+        android:layout_width="120dp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_1sdp"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:text="@string/restart"
+        app:layout_constraintBottom_toTopOf="@id/game_board"
+        app:layout_constraintStart_toStartOf="@id/game_board" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/container_timer_moves"
+        android:layout_width="@dimen/_172sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:background="@drawable/shape_moves_timer"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/_16sdp"
+        app:layout_constraintBottom_toTopOf="@id/game_board"
+        app:layout_constraintEnd_toEndOf="@id/game_board">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/container_timer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/celia_garcia"
+                android:gravity="center"
+                android:text="@string/time"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp" />
+
+            <Chronometer
+                android:id="@+id/chronometer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/celia_garcia"
+                android:text="@string/zero"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18sdp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/container_moves"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/celia_garcia"
+                android:gravity="center"
+                android:text="@string/moves"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/moves"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/celia_garcia"
+                android:text="@string/zero"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16ssp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/game_board"
+        style="@style/game_board"
+        android:background="@drawable/shape_game_board_parent"
+        android:padding="@dimen/_8sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button1"
+            style="@style/cell"
+            app:layout_constraintBottom_toTopOf="@id/button5"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@id/button2"
+            app:layout_constraintStart_toEndOf="@id/button2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button2"
+            style="@style/cell"
+            app:layout_constraintBottom_toTopOf="@id/button6"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@id/button3"
+            app:layout_constraintStart_toEndOf="@id/button1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button3"
+            style="@style/cell"
+            app:layout_constraintBottom_toTopOf="@id/button7"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@id/button4"
+            app:layout_constraintStart_toEndOf="@id/button2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button4"
+            style="@style/cell"
+            app:layout_constraintBottom_toTopOf="@id/button8"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/button3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button5"
+            style="@style/cell"
+            app:layout_constraintBottom_toTopOf="@id/button9"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@id/button6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/button1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button6"
+            style="@style/cell"
+            app:layout_constraintBottom_toTopOf="@id/button10"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@id/button7"
+            app:layout_constraintStart_toEndOf="@id/button5"
+            app:layout_constraintTop_toBottomOf="@id/button2" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button7"
+            style="@style/cell"
+            app:layout_constraintBottom_toTopOf="@id/button11"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@id/button8"
+            app:layout_constraintStart_toEndOf="@id/button6"
+            app:layout_constraintTop_toBottomOf="@id/button3" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button8"
+            style="@style/cell"
+            app:layout_constraintBottom_toTopOf="@id/button12"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/button7"
+            app:layout_constraintTop_toBottomOf="@id/button4" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button9"
+            style="@style/cell"
+            app:layout_constraintBottom_toTopOf="@id/button13"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@id/button10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/button5" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button10"
+            style="@style/cell"
+            app:layout_constraintBottom_toTopOf="@id/button14"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@id/button11"
+            app:layout_constraintStart_toEndOf="@id/button9"
+            app:layout_constraintTop_toBottomOf="@id/button6" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button11"
+            style="@style/cell"
+            app:layout_constraintBottom_toTopOf="@id/button15"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@id/button12"
+            app:layout_constraintStart_toEndOf="@id/button10"
+            app:layout_constraintTop_toBottomOf="@id/button7" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button12"
+            style="@style/cell"
+            app:layout_constraintBottom_toTopOf="@id/button16"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/button11"
+            app:layout_constraintTop_toBottomOf="@id/button8" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button13"
+            style="@style/cell"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@id/button14"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/button9" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button14"
+            style="@style/cell"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@id/button15"
+            app:layout_constraintStart_toEndOf="@id/button13"
+            app:layout_constraintTop_toBottomOf="@id/button10" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button15"
+            style="@style/cell"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@id/button16"
+            app:layout_constraintStart_toEndOf="@id/button14"
+            app:layout_constraintTop_toBottomOf="@id/button11" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button16"
+            style="@style/cell"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/button15"
+            app:layout_constraintTop_toBottomOf="@id/button12" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_exit"
+        style="@style/style_restart_pause_button"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:text="@string/exit"
+        android:backgroundTint="@drawable/restart_bg"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.184"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/game_board"
+        app:layout_constraintVertical_bias="0.422" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_play"
+        style="@style/style_game_status"
+        android:fontFamily="@font/celia_garcia"
+        android:text="@string/play"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_80ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:textAllCaps="true" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/button_resume"
+        style="@style/style_game_status"
+        android:src="@drawable/ic_resume"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

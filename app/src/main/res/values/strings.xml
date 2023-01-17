@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Game Puzzle15</string>
+    <string name="empty_button_text">16</string>
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="moves">MOVES</string>
+    <string name="time">TIME</string>
+    <string name="zero">0</string>
+    <string name="start">Start</string>
+    <string name="settings">Settings</string>
+    <string name="about">About</string>
+    <string name="exit">Exit</string>
+    <string name="dialog_quit_game">Would you to like leave?</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="snackbar_exit_text">Click again to exit</string>
+    <string name="winner_text">You win</string>
+    <string name="records">Records</string>
+    <string name="menu">Menu</string>
+    <string name="restart">restart</string>
+    <string name="excellent">Excellent!</string>
+    <string name="about_text">The goal of the game is to arrange the tiles in ascending order by moving them around inside the box, preferably with as few moves as possible.</string>
+    <string name="about_info">This is Game GITA Academy of Programmers
+student
+Azamov Husanboy
+produced by.</string>
+    <string name="ok">OK</string>
+    <string name="tv_fast_start">Fast start</string>
+    <string name="tv_fast_start_full">When you start the game, the game will start immediately, bypassing the main menu.</string>
+    <string name="tv_fast_passage">Fast passage</string>
+    <string name="tv_fast_passage_full">When you solve the puzzle, starts a new game immediately, bypassing the victory screen.</string>
+    <string name="tv_vibration">Vibration</string>
+    <string name="tv_vibration_full">When you tile the button, a vibration will be emitted.</string>
+    <string name="tv_sound">Sound</string>
+    <string name="tv_sound_full">When you tile the button, a sound will be emitted.</string>
+    <string name="tv_music">Music</string>
+    <string name="tv_music_full">When you select this function, the game will start music,</string>
+    <string name="tv_clear_records">Clear records</string>
+    <string name="about_game">About Game</string>
+    <string name="home">Home</string>
+    <string name="shp_music">shp_music</string>
+    <string name="shp_sound">shp_sound</string>
+    <string name="shp_fast_start">shp_fast_start</string>
+    <string name="shp_fast_passage">shp_fast_passage</string>
+    <string name="dialog_clear_records_text">Would you like to clear your records?</string>
+    <string name="shp_records">shp_records</string>
+    <string name="no_record">There are no records!</string>
+    <string name="success_record">Records have been cleared successfully</string>
+    <string name="tv_records_dialog">Moves: %1$s</string>
+    <string name="tv_win_dialog">It took you %1$s moves</string>
+    <string name="default_shp_records">0</string>
+    <string name="shp_continue_game">shp_continue_game</string>
+    <string name="continue_game">Continue</string>
+    <string name="continue_previous_game">Do you want to continue the previous game?</string>
+    <string name="empty_button_text26">25</string>
+    <string name="empty_button_text36">36</string>
+    <string name="about_info2">This is Game GITA Academy of Programmers student Azamov Husanboy produced by</string>
+
+</resources>

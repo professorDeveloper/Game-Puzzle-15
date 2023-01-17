@@ -1,0 +1,184 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.GamePuzzle15" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/color_container</item>
+        <item name="colorPrimaryVariant">@color/color_status_bar</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/white</item>
+        <item name="colorSecondaryVariant">@color/white</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="game_board">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="game_board_medium">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="cell">
+        <item name="fontFamily">@font/celia_garcia</item>
+        <item name="android:textSize">@dimen/_24ssp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/shape_button</item>
+        <item name="android:layout_width">@dimen/_65sdp</item>
+        <item name="android:layout_height">@dimen/_65sdp</item>
+        <item name="android:layout_margin">@dimen/_2sdp</item>
+    </style>
+    <style name="cell_medium">
+        <item name="fontFamily">@font/celia_garcia</item>
+        <item name="android:textSize">@dimen/_24ssp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/shape_button</item>
+        <item name="android:layout_width">@dimen/_40sdp</item>
+
+        <item name="android:layout_height">@dimen/_40sdp</item>
+        <item name="android:layout_marginStart">@dimen/_3sdp</item>
+        <item name="android:layout_marginTop">@dimen/_3sdp</item>
+        <item name="android:layout_marginEnd">@dimen/_3sdp</item>
+        <item name="android:layout_marginBottom">@dimen/_3sdp</item>
+    </style>
+    <style name="ItemButtonSecondLevel">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">@dimen/_42sdp</item>
+        <item name="android:layout_height">@dimen/_42sdp</item>
+        <item name="android:background">@drawable/shape_button</item>
+        <item name="android:textSize">@dimen/_16sdp</item>
+    </style>
+    <style name="ItemButtonThirdLevel">
+        <item name="android:layout_margin">@dimen/_1sdp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">@dimen/_38sdp</item>
+        <item name="android:layout_height">@dimen/_38sdp</item>
+        <item name="android:background">@drawable/shape_button</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+    </style>
+
+
+    <style name="cell_empty">
+        <item name="android:background">@drawable/shape_empty_button</item>
+        <item name="android:layout_width">@dimen/_65sdp</item>
+        <item name="android:layout_height">@dimen/_65sdp</item>
+        <item name="android:layout_margin">@dimen/_2sdp</item>
+    </style>
+
+    <style name="style_tv_title">
+        <item name="android:layout_width">@dimen/_200sdp</item>
+        <item name="android:layout_height">@dimen/_90sdp</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:elevation">@dimen/_8sdp</item>
+        <item name="android:fontFamily">@font/celia_garcia</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/_40ssp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="style_main_fragment_button">
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:elevation">@dimen/_8sdp</item>
+        <item name="android:layout_width">@dimen/_176sdp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/_4sdp</item>
+        <item name="android:paddingBottom">@dimen/_4sdp</item>
+        <item name="android:paddingStart">@dimen/_8sdp</item>
+        <item name="android:paddingEnd">@dimen/_8sdp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="cornerRadius">@dimen/_8sdp</item>
+        <item name="android:layout_marginBottom">@dimen/_8sdp</item>
+        <item name="android:backgroundTint">@color/color_restart_pause_default</item>
+        <item name="android:fontFamily">@font/celia_garcia</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/_32ssp</item>
+    </style>
+
+    <style name="style_restart_pause_button">
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:paddingTop">@dimen/_4sdp</item>
+        <item name="android:paddingBottom">@dimen/_4sdp</item>
+        <item name="android:elevation">@dimen/_8sdp</item>
+        <item name="android:backgroundTint">@drawable/restart_bg</item>
+        <item name="cornerRadius">@dimen/_8sdp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_marginBottom">@dimen/_8sdp</item>
+        <item name="android:fontFamily">@font/celia_garcia</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/_15sdp</item>
+    </style>
+    <style name="cellBg3">
+        <item name="fontFamily">@font/celia_garcia</item>
+        <item name="android:textSize">@dimen/_24ssp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/shape_button3</item>
+        <item name="android:layout_width">@dimen/_65sdp</item>
+        <item name="android:layout_height">@dimen/_65sdp</item>
+        <item name="android:layout_margin">@dimen/_2sdp</item>
+    </style>
+
+    <style name="cellBg1">
+        <item name="fontFamily">@font/celia_garcia</item>
+        <item name="android:textSize">@dimen/_24ssp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/shape_buttonbg2</item>
+        <item name="android:layout_width">@dimen/_65sdp</item>
+        <item name="android:layout_height">@dimen/_65sdp</item>
+        <item name="android:layout_margin">@dimen/_2sdp</item>
+    </style>
+    <style name="style_dialog_button">
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:elevation">@dimen/_8sdp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAlignment">center</item>
+        <item name="cornerRadius">@dimen/_8sdp</item>
+        <item name="android:fontFamily">@font/celia_garcia</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/_16ssp</item>
+    </style>
+
+    <style name="style_game_status">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@color/color_init_game</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/_24sdp</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="style_settings_tv">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/celia_garcia</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+
+    <style name="style_settings_switch_default">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/_56sdp</item>
+    </style>
+    <style name="animation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+</resources>
